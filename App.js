@@ -6,7 +6,7 @@ export default function App() {
     <View style={styles.container}>
       <Text style = {styles.baseText}>Đăng nhập</Text>
       <Text>Nhập số điện thoại</Text>
-      <Text>Dùng số điện thoại để đăng nhập hoặc đăng ký tài khoản tại OneHousing Pro</Text>
+      <Text>Dùng số điện thoại để đăng nhậpzdds hoặc đăng ký tài khoản tại OneHousing Pro</Text>
       <KeyboardAvoidingView behavior='padding'>
         
         <TextInput 
