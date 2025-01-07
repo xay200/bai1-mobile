@@ -1,25 +1,21 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, TextInput, Button, KeyboardAvoidingView, Keyboard } from 'react-native';
+import { StyleSheet, Text, View } from 'react-native';
+const CustomText = (props) =>{
+  return (
+    <View style = {styles.square}>
+      <Text>
+        Hello, World
+      </Text>
+    </View>
+  )
+}
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text style = {styles.baseText}>Đăng nhập</Text>
-      <Text>Nhập số điện thoại</Text>
-      <Text>Dùng số điện thoại để đăng nhậpzdds hoặc đăng ký tài khoản tại OneHousing Pro</Text>
-      <KeyboardAvoidingView behavior='padding'>
-        
-        <TextInput 
-        style= {styles.input}
-        placeholder="Nhập số điện thoại của bạn"
-        value ={Number}
-        keyboardType='phone-pad'
-      />
-      </KeyboardAvoidingView>
-      
-      
-      <StatusBar style="auto" />
-    </View>
+          <CustomText />
+          <StatusBar style="auto" />
+        </View>
   );
 }
 
@@ -27,14 +23,17 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#fff',
-    //alignItems: 'center',
-    //justifyContent: 'center',
-    top: 20
+    alignItems: 'center',
+    justifyContent: 'center',
   },
-  baseText: {
-    fontWeight: 'bold',
-  },
-  input: {
-    height: 40
+
+  square:{
+    width: 100,
+    height: 100,
+    backgroundColor: 'lightblue',
+    alignItems: 'center',
+    justifyContent: 'center',
+
   }
+
 });
